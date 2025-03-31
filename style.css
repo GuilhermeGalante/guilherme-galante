@@ -7,10 +7,52 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #000000;
   height: 100vh;
 }
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background: #000000;
+}
 
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
 .interface {
   max-width: 1280px;
   margin: 0 auto;
@@ -24,11 +66,12 @@ body {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #da9202;
+  background-color: #3185a5;
   border: 0;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
+  margin-top: 20px;
 }
 
 h2.title {
@@ -38,12 +81,12 @@ h2.title {
 }
 
 h2.title span {
-  color: #da9202;
+  color: #3185a5;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-  box-shadow: 0px 0px 8px #da9202;
+  box-shadow: 0px 0px 8px #3185a5;
   transform: scale(1.1);
 }
 
@@ -59,7 +102,7 @@ header > .interface {
 }
 
 header a {
-  color: #8a8989;
+  color: #3185a5;
   text-decoration: none;
   display: inline-block;
   transition: 0.2s;
@@ -81,13 +124,12 @@ header nav.menu-desktop ul li {
 
 /* Estilo do menu mobile */
 /* para nao abir no pc */
-.btn-abrir-menu{
+.btn-abrir-menu {
   display: none;
 }
 
-
 .btn-abrir-menu i {
-  color: #da9202;
+  color: #3185a5;
   font-size: 40px;
 }
 
@@ -100,14 +142,14 @@ header nav.menu-desktop ul li {
   z-index: 99999;
   width: 0%;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
   width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu ~ .overlay-menu {
   display: block;
 }
 
@@ -120,7 +162,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-  color: #da9202;
+  color: #3185a5;
   font-size: 60px;
 }
 
@@ -148,7 +190,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-  background-color: #da9202;
+  background-color: #3185a5;
   color: #000;
 }
 
@@ -172,7 +214,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-  color: #da9202;
+  color: #3185a5;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -183,6 +225,10 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #3185a5;
+  box-shadow: 0 0 8px #ffffff8e;
 }
 
 @keyframes flutuar {
@@ -192,6 +238,99 @@ section.topo-do-site .flex {
   100% {
     top: 30px;
   }
+}
+
+.typing-text {
+  color: white;
+  padding-bottom: 5px;
+}
+.typing-text span {
+  color: #3185a5;
+  padding-top: 5px;
+}
+.typing-text span::before {
+  content: "Software Engineer";
+  color: var(--main-color);
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 20px;
+  border-left: 3px solid var(--bg-color);
+  right: -8;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  overflow: hidden;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #3185a5;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Web Designer";
+  }
+  21%,
+  40% {
+    content: "Software Developer";
+  }
+  41%,
+  60% {
+    content: "Front-end";
+  }
+  61%,
+  80% {
+    content: "Fotográfo por hobbie";
+  }
+  81%,
+  100% {
+    content: "Especialista em UX, UI";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  60%,
+  65%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+    height: 20px;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+    height: 20px;
+  }
+}
+
+.home-content {
+  color: white;
+}
+
+.home-content h1 {
+  padding-bottom: 5px;
 }
 
 /* ESTILO DAS ESPECIALIDADES */
@@ -213,12 +352,12 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 8px #ffffff8e;
+  box-shadow: 0 0 8px #3185a5;
 }
 
 .especialidades .especialidades-box i {
   font-size: 70px;
-  color: #da9202;
+  color: #3185a5;
 }
 
 .especialidades .especialidades-box h3 {
@@ -236,6 +375,19 @@ section.sobre .flex {
   gap: 60px;
 }
 
+.img-sobre img {
+  width: 400px; /* Ajuste o valor conforme o tamanho desejado */
+  height: 400px; /* Mantém a proporção da imagem */
+  border-radius: 50%;
+  border: 1px solid #3185a5;
+  box-shadow: 0 0 8px #ffffff8e;
+}
+
+.img-sobre img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 25px #3185a5);
+}
+
 .sobre .txt-sobre {
   color: #fff;
 }
@@ -247,7 +399,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-  color: #da9202;
+  color: #3185a5;
   display: block;
 }
 
@@ -261,7 +413,7 @@ section.sobre .flex {
   height: 60px;
   border-radius: 50%;
   border: none;
-  background-color: #da9202;
+  background-color: #3185a5;
   font-size: 22px;
   cursor: pointer;
   margin: 0 5px;
@@ -307,20 +459,132 @@ section.portfolio .flex {
   justify-content: center;
   font-size: 24px;
   font-weight: 600;
-  color: #fff;
+  color: #3185a5;
   opacity: 0;
   transition: 0.5s;
 }
 
-.overlay a{
+.overlay a {
   text-decoration: none;
-  color: #fff;
+  color: #3185a5;
 }
 
 .overlay:hover {
   opacity: 1;
 }
+/* timeline */
+section .timeline {
+  color: white;
+}
 
+.interface h2 {
+  margin-top: 60px;
+}
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+}
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both; /*verificar */
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: #3185a5;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+/* .timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233, 33, 99, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+} */
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #3185a5;
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.timeline ul li:nth-child(odd) .time{
+  width: 160px;
+  position: absolute;
+  top: 12px;
+  right: -220px;
+  margin: 0;
+  padding: 8px;
+  background-color: #3185a5;
+  border-radius: 18px;
+  box-shadow: hsl(210, 1%, 44%);
+}
+.timeline ul li:nth-child(even) .time{
+  width: 160px;
+  position: absolute;
+  top: 12px;
+  left: -220px;
+  margin: 0;
+  padding: 8px;
+  background-color: #3185a5;
+  border-radius: 18px;
+  box-shadow: hsl(210, 1%, 44%);
+}
 /* estilo do formulario de contato */
 section.formulario {
   padding: 80px 4%;
@@ -360,7 +624,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
   width: 120px;
-  background-color: #da9202;
+  background-color: #3185a5;
   color: #000;
   font-weight: 700;
   cursor: pointer;
@@ -374,7 +638,7 @@ form .btn-enviar input {
 }
 
 .success {
-  color: #da9202;
+  color: #3185a5;
 }
 
 .error {
@@ -398,11 +662,11 @@ footer .line-footer {
 }
 
 .borda {
-  border-top: 2px solid #da9202;
+  border-top: 2px solid #3185a5;
 }
 
 footer .line-footer p i {
-  color: #da9202;
+  color: #3185a5;
   font-size: 22px;
 }
 
@@ -416,10 +680,10 @@ footer .titulo-links {
   display: block;
   font-weight: 600;
   margin-bottom: 24px;
-  margin-top: 24px
+  margin-top: 24px;
 }
 
-footer .links-rapidos nav ul li a{
+footer .links-rapidos nav ul li a {
   color: #fff;
   display: block;
   margin-bottom: 8px;
@@ -427,11 +691,12 @@ footer .links-rapidos nav ul li a{
 }
 
 @media screen and (max-width: 1020px) {
-  .btn-abrir-menu{
+  .btn-abrir-menu {
     display: block;
   }
 
-  .menu-desktop, .btn-contato{
+  .menu-desktop,
+  .btn-contato {
     display: none;
   }
 

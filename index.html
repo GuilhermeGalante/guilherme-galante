@@ -32,6 +32,11 @@
     <!--bootstrap icons fim-->
   </head>
   <body>
+    <div id="particles-js"></div>
+    <script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
+
     <header>
       <div class="interface">
         <div class="logo">
@@ -70,21 +75,22 @@
         <div class="menu-mobile" id="menu-mobile">
           <div class="btn-fechar">
             <i class="bi bi-x"></i>
-          </div><!--btn-fechar-->
+          </div>
+          <!--btn-fechar-->
           <nav>
             <ul>
               <li><a href="#inicio">Início</a></li>
               <li><a href="#especialidades">Especialidades</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#formulario" >Contato</a></li>
+              <li><a href="#formulario">Contato</a></li>
             </ul>
-          </nav><!--nav-mobile--->
-
-        </div><!--menu-mobile-->
-        <div class="overlay-menu" id="overlay-menu">
-
-        </div><!--overlay-menu-->
+          </nav>
+          <!--nav-mobile--->
+        </div>
+        <!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+        <!--overlay-menu-->
       </div>
       <!--Interface-->
     </header>
@@ -94,15 +100,26 @@
       <section id="inicio" class="topo-do-site">
         <div class="interface">
           <div class="flex">
-            <div class="txt-topo-site">
-              <h1>
-                TRANSFORMANDO O SEU SONHO EM REALIDADE DIGITAL<span>!</span>
-              </h1>
+            <div class="home-content">
+              <h1>Oi, sou o <span>Guilherme</span></h1>
+              <h3 class="typing-text">Eu sou um <span></span></h3>
               <p>
-                Criatividade e inovação andam lado a lado. Com uma combinação
-                única de design impactante, funcionalidade intuitiva e
-                otimização para resultados, estou pronto(a) para criar a
-                presença online dos seus sonhos.
+                Eu tenho 21 anos, atualmente estou cursando engenharia de
+                software e aprimorando meus conhecimento em front-end,
+                aprendendo desde o começo, HTML , CSS e Javascript para depois
+                aplicar meus sólidos conhecimentos em frameworks e bibliotecas.
+              </p>
+              <div class="btn-contato">
+                <a href="https://wa.me/5531982595619" target="_blank">
+                  <button>Contrate-me</button>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="txt-topo-site">
+              <h1>Oi, sou o <span>Guilherme</span></h1>
+              <h3 class="typing-text">Eu sou um <span></span></h3>
+              <p>
+                Eu tenho 21 anos, atualmente estou cursando engenharia de software e aprimorando meus conhecimento em front-end, aprendendo desde o começo, HTML , CSS e Javascript para  depois aplicar meus sólidos conhecimentos em frameworks e bibliotecas.
               </p>
 
               <div class="btn-contato">
@@ -110,12 +127,12 @@
                   <button>Entre em contato</button>
                 </a>
               </div>
-              <!--btn-contato-->
-            </div>
+              
+            </div> -->
             <!--txt-topo-site-->
 
             <div class="img-topo-site">
-              <img src="imgs/eularanja.png" alt="" />
+              <img src="imgs/ghibli.jpg" alt="" />
             </div>
             <!--img-topo-site-->
           </div>
@@ -130,31 +147,36 @@
           <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
           <div class="flex">
             <div class="especialidades-box">
-              <i class="bi bi-code-square"></i>
-              <h3>Website</h3>
+              <i class="bi bi-filetype-js"></i>
+              <h3>Javascript</h3>
               <p>
-                Especializando atualmente em front-end, focando principalmente
-                em HTML, CSS e JS (Java Script). Gosto da parte de design e
-                entender como posso melhorar a experiência do usuário ao
-                utilizar o meu produto.
+                Atualmente, aprimoro minhas habilidades em JavaScript,
+                explorando o desenvolvimento web e aplicando conceitos práticos
+                em projetos. Estou me aprofundando em suas funcionalidades para
+                criar interatividade e dinamismo em páginas web. Também possuo
+                noções básicas em C que ajudam ba minha lógica de programação.
               </p>
             </div>
             <!--especialidades-box-->
             <div class="especialidades-box">
-                <i class="bi bi-gpu-card"></i>
-              <h3>Sede de evoluir</h3>
+              <i class="bi bi-filetype-html"></i>
+              <h3>HTML</h3>
               <p>
-                Estou comprometido em evoluir constantemente, aprendendo e dominando as tecnologias mais atuais e amplamente utilizadas no mercado. A adaptação é essencial no mundo da tecnologia, e estou determinado a estar na vanguarda, oferecendo soluções inovadoras. Minha busca contínua pelo conhecimento impulsiona minha carreira, e estou ansioso para enfrentar os desafios e oportunidades futuras.
+                Tenho experiência no uso de HTML, estruturando conteúdo de
+                maneira semântica e acessível. Meu foco é criar layouts bem
+                organizados, alinhados às melhores práticas do desenvolvimento
+                front-end.
               </p>
             </div>
             <!--especialidades-box-->
             <div class="especialidades-box">
-              <i class="bi bi-filetype-py"></i>
-              <h3>Python</h3>
+              <i class="bi bi-filetype-css"></i>
+              <h3>CSS</h3>
               <p>
-                Melhorando meus conhecimentos em python, pois reconheço ser uma
-                linguagem indíspensavel no mercado. Alguns pequenos feitos com
-                aplicação em automação e RPA, análise de dados.
+                Desenvolvo minhas habilidades em CSS, aprimorando a estilização
+                de páginas web. Estou aprendendo a criar interfaces visuais
+                modernas, responsivas e agradáveis, aplicando conceitos como
+                flexbox, grid layout e design responsivo.
               </p>
             </div>
             <!--especialidades-box-->
@@ -169,22 +191,18 @@
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
-              <img src="imgs/fotoeusorriso.png" alt="" />
+              <img src="imgs/perfil.jpg" alt="" />
             </div>
             <!--img-sobre-->
 
             <div class="txt-sobre">
-              <h2>MUITO PRAZER, <span>SOU GUILHERME GALANTE.</span></h2>
+              <h2>METAS <span>PARA O FUTURO.</span></h2>
               <p>
-                Eu tenho 19 anos e sempre gostei da área de tecnologia, porém
-                apenas recentemente que realmente comecei a focar no mercado de
-                desenvolvedores, desde então venho me superando e aos poucos
-                criando meus portfólios para demonstrar meu valor e conhecimento
-                ao mercado de trabalho.
-              </p>
-              <p>
-                Atualmente eu resido em Ponte Nova - MG e curso Análise e
-                Desenvolvimento de Sistemas na UNIVIÇOSA.
+                Tenho como objetivo dominar React, Node.js e TypeScript para
+                ampliar minhas habilidades em front-end e criar aplicações web
+                mais dinâmicas e robustas. Após consolidar esses conhecimentos,
+                planejo me aprofundar no desenvolvimento back-end, buscando uma
+                formação completa como desenvolvedor full stack.
               </p>
               <div class="btn-social">
                 <a
@@ -195,7 +213,9 @@
                 <a href="https://github.com/GuilhermeGalante" target="_blank"
                   ><button><i class="bi bi-github"></i></button
                 ></a>
-                <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank"
+                <a
+                  href="https://www.linkedin.com/in/guilherme-galante-368365299/"
+                  target="_blank"
                   ><button><i class="bi bi-linkedin"></i></button
                 ></a>
               </div>
@@ -218,7 +238,7 @@
               style="background-image: url(imgs/Funil\ OBC\ Start\ 2.0.png)"
             >
               <div class="overlay">
-                <a href="Projetos/projeto1.html" target="_blank">   Projeto 1</a>
+                <a href="Projetos/projeto1.html" target="_blank"> Projeto 1</a>
               </div>
             </div>
             <div
@@ -226,7 +246,9 @@
               style="background-image: url(imgs/Projeto2.png)"
             >
               <div class="overlay">
-                <a href="projetos 2/projeto2.html" target="_blank"> Projeto 2</a>
+                <a href="projetos 2/projeto2.html" target="_blank">
+                  Projeto 2</a
+                >
               </div>
             </div>
             <div
@@ -241,12 +263,67 @@
         <!--interface-->
       </section>
       <!--portfolio-->
-
+      <!-- timeline -->
+      <section>
+        <div class="interface">
+          <h2 class="title"> <span>EDUCAÇÃO</span></h2>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="content">
+                <h3>Técnico em Edificações - SENAI</h3>
+                <p>
+                  Em abril de 2023 eu me formei como técnico em edificações e cheguei até a estagiar na área. Porém, ao conhecer a área da tecnologia eu resolvi tentar uma oportunidade de migrar de área.
+                </p>
+              </div>
+              <div class="time"><h4>Abril de 2023</h4></div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Análise e desenvolvimento de sistemas</h3>
+                <p>
+                  Aqui foi quando eu tive contato pela primeira vez com a área de programação, comecei o curso de ADS em uma cidade vizinha, porém acabou ficando muito caro para poder ir e voltar e bancar o curso, desse jeito eu acabei optando por sair.
+                </p>
+              </div>
+              <div class="time"><h4>Agosto de 2023</h4></div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>Engenharia de software</h3>
+                <p>
+                  Em dezembro de 2024 pesquisando uma faculdade na área de programação para ingressar eu encontrei a INFNET. E no dia 27 de janeiro de 2025 eu comecei o curso de engenharia de software e desde então estou por aqui, e definitivamente não errei na minha escolha.
+                </p>
+              </div>
+              <div class="time"><h4>Janeiro de 2025</h4></div>
+            </li>
+            <li>
+              <div class="content">
+                <h3>que diabo é isso</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  accusamus rem harum nesciunt, odio maxime architecto molestiae
+                  amet, quaerat neque, pariatur similique. Voluptatibus iste
+                  officiis necessitatibus ducimus inventore! Consequuntur,
+                  corrupti.
+                </p>
+              </div>
+              <div class="time"><h4>janeiro de algum ano</h4></div>
+            </li>
+            <div style="clear: both;"></div>
+          </ul>
+        </div>
+        
+      </section>
+      <!-- timeline final -->
       <section class="formulario" id="formulario">
         <div class="interface">
           <h2 class="title">FALA <span>COMIGO.</span></h2>
 
-          <form method="post" action="https://formsubmit.co/ajax/guilherme.galante17112003@gmail.com" data-form>
+          <form
+            method="post"
+            action="https://formsubmit.co/ajax/guilherme.galante17112003@gmail.com"
+            data-form
+          >
             <label for="nome"></label>
             <input
               type="text"
@@ -281,7 +358,6 @@
               <input type="submit" data-button value="ENVIAR" />
             </div>
           </form>
-          
         </div>
         <!--interface-->
       </section>
@@ -309,10 +385,11 @@
                   <li><a href="#especialidades">Especialidades</a></li>
                   <li><a href="#sobre">Sobre</a></li>
                   <li><a href="#projetos">Projetos</a></li>
-                  <li><a href="#formulario" >Contato</a></li>
+                  <li><a href="#formulario">Contato</a></li>
                 </ul>
               </nav>
-            </div><!--links-rapidos-->
+            </div>
+            <!--links-rapidos-->
             <div class="btn-social">
               <a
                 href="https://www.instagram.com/guilherme_galante17/"
@@ -322,7 +399,9 @@
               <a href="https://github.com/GuilhermeGalante" target="_blank"
                 ><button><i class="bi bi-github"></i></button
               ></a>
-              <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/guilherme-galante-368365299/"
+                target="_blank"
                 ><button><i class="bi bi-linkedin"></i></button
               ></a>
             </div>
