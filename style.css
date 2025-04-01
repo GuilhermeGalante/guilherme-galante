@@ -251,6 +251,7 @@ section.topo-do-site .flex {
 .typing-text span {
   color: #3185a5;
   padding-top: 5px;
+  position: relative;
 }
 .typing-text span::before {
   content: "Software Engineer";
@@ -258,7 +259,7 @@ section.topo-do-site .flex {
   animation: words 20s infinite;
 }
 
-.typing-text span::after {
+/* .typing-text span::after {
   content: "";
   background-color: var(--bg-color);
   position: absolute;
@@ -268,22 +269,60 @@ section.topo-do-site .flex {
   right: -8;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   overflow: hidden;
+  border: 2px solid red;
+} */
+
+.typing-text span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #3185a5;
+  right: -10px;
+  animation: cursor 0.8s infinite, write 20s steps(14) infinite;
+  width: calc(100% + 10px);
+  background-color: #000000;
+}
+
+@keyframes write {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 10px);
+  }
 }
 
 @keyframes cursor {
-  to {
-    border-left: 3px solid #3185a5;
+  0% {
+    border-left: 2px solid #000000;
   }
 }
 
 @keyframes words {
   0%,
   20% {
-    content: "Web Designer";
+    content: "Designer Web";
   }
   21%,
   40% {
-    content: "Software Developer";
+    content: "Software Engineer";
   }
   41%,
   60% {
@@ -509,7 +548,7 @@ section .timeline {
   position: relative;
   width: 50%;
   padding: 20px 40px;
-  
+
   box-sizing: border-box;
 }
 
@@ -521,7 +560,7 @@ section .timeline {
 .timeline ul li:nth-child(even) {
   float: right;
   text-align: left;
-  clear: both; 
+  clear: both;
 }
 
 .content {
@@ -539,7 +578,7 @@ section .timeline {
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 100, 0.267);
 }
- .timeline ul li:nth-child(even):before {
+.timeline ul li:nth-child(even):before {
   content: "";
   position: absolute;
   top: 24px;
@@ -549,7 +588,7 @@ section .timeline {
   background: #3185a5;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
-} 
+}
 
 .timeline ul li h3 {
   margin: 0;
@@ -695,9 +734,9 @@ footer .links-rapidos nav ul li a {
   text-decoration: none;
 }
 
-footer .logo-footer img {
-  width: 100%;
-}
+/* footer .logo-footer img {
+  width: 60%;
+} */
 
 /* responsividade */
 @media screen and (max-width: 1020px) {
@@ -800,53 +839,51 @@ footer .logo-footer img {
 }
 
 @media screen and (max-width: 450px) {
+  section .timeline {
+    width: 450px;
+  }
 
-section .timeline {
-  width: 450px;
-}
+  section .timeline h3 {
+    font-size: 16px;
+  }
+  section .timeline h4 {
+    font-size: 16px;
+  }
+  section .timeline p {
+    font-size: 12px;
+  }
 
-section .timeline h3 {
-  font-size: 16px;
-}
-section .timeline h4 {
-  font-size: 16px;
-}
-section .timeline p {
-  font-size: 12px;
-}
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 46%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+  }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 46%;
-  width: 2px;
-  height: 100%;
-  background: #c5c5c5;
-}
+  .timeline ul li:nth-child(odd) .time {
+    right: -165px;
+  }
+  .timeline ul li:nth-child(even) .time {
+    left: -195px;
+  }
 
-.timeline ul li:nth-child(odd) .time {
-  right: -165px;
-}
-.timeline ul li:nth-child(even) .time {
-  left: -195px;
-}
+  .timeline ul li:nth-child(odd):before {
+    position: absolute;
+    right: 12px;
+  }
 
-.timeline ul li:nth-child(odd):before{
-  position: absolute;
-  right: 12px;
-}
+  .timeline ul li:nth-child(even):before {
+    position: absolute;
+    left: -22px;
+  }
 
-.timeline ul li:nth-child(even):before {
-  position: absolute;
-  left: -22px;
-}
-
-.timeline ul li:nth-child(odd) {
-  text-align: right;
-  padding-left: 8px;
-}
-.timeline ul li:nth-child(even) {
-  padding-left: 10px;
-}
-
+  .timeline ul li:nth-child(odd) {
+    text-align: right;
+    padding-left: 8px;
+  }
+  .timeline ul li:nth-child(even) {
+    padding-left: 10px;
+  }
 }
