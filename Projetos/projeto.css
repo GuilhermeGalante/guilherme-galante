@@ -11,6 +11,50 @@ body {
   height: 100vh;
 }
 
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background: #000000;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
 .interface {
   max-width: 1280px;
   margin: 0 auto;
@@ -24,7 +68,7 @@ body {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #da9202;
+  background-color: #3185A5;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -38,12 +82,12 @@ h2.title {
 }
 
 h2.title span {
-  color: #da9202;
+  color: #3185A5;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-  box-shadow: 0px 0px 8px #da9202;
+  box-shadow: 0px 0px 8px #3185A5;
   transform: scale(1.1);
 }
 
@@ -86,7 +130,7 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu i {
-  color: #da9202;
+  color: #3185A5;
   font-size: 40px;
 }
 
@@ -119,7 +163,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-  color: #da9202;
+  color: #3185A5;
   font-size: 60px;
 }
 
@@ -143,39 +187,54 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-  background-color: #da9202;
+  background-color: #3185A5;
   color: #000;
 }
 
-/* estilo do topo do site */
-section.topo-do-site {
-  padding: 40px 4%;
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+  padding: 60px;
 }
 
-section.topo-do-site .flex {
-  align-items: center;
+/* section.especialidades .flex {
+  padding-left: 50px;
+} */
+
+.especialidades .especialidades-box {
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 46px;
+  margin-bottom: 46px;
+  padding: 20px;
+  transition: 0.2s;
+  display: flex;
   justify-content: center;
-  gap: 90px;
+  align-items: center;
+  flex-direction: column;
 }
 
-.topo-do-site h1 {
-  color: #fff;
-  font-size: 42px;
-  line-height: 50px;
+.especialidades .especialidades-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #3185a5;
 }
 
-.topo-do-site .txt-topo-site h1 span {
-  color: #da9202;
+.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #3185a5;
 }
 
-.topo-do-site .txt-topo-site p {
-  color: #fff;
-  margin: 40px 0;
+.especialidades .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+.especialidades .especialidades-box p {
+  font-size: 16px;
+  margin: 15px ;
 }
 
-.topo-do-site .txt-topo-site ul li{
-  color: #fff;
-  margin-left: 40px;
+.especialidades .video-1 {
+  width: 80%;
+  height: 500px;
 }
 
 /* botoes sociais rodape */
@@ -184,7 +243,7 @@ section.topo-do-site .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #da9202;
+    background-color: #3185A5;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -208,11 +267,11 @@ footer .line-footer {
 }
 
 .borda {
-  border-top: 2px solid #da9202;
+  border-top: 2px solid #3185A5;
 }
 
 footer .line-footer p i {
-  color: #da9202;
+  color: #3185A5;
   font-size: 22px;
 }
 
@@ -260,10 +319,6 @@ footer .links-rapidos nav ul li a {
       flex-direction: 
     } */
 
-  .video-1 {
-    width: 100%;
-  }
-
   /* cabeçalho */
   .menu-desktop,
   btn-contato {
@@ -295,4 +350,15 @@ footer .links-rapidos nav ul li a {
   footer .line-footer {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 450px) {
+
+  .especialidades .video-1 {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 80%;
+  }
+  
+
 }

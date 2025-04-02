@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script defer src="projeto1.js"></script>
+    <script defer src="projeto2.js"></script>
 
     <link rel="stylesheet" href="projeto2.css">
     <!--favicon-->
@@ -32,13 +32,17 @@
     <title>Projeto 2</title>
 </head>
 <body>
+  <div id="particles-js"></div>
+  <script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
     <header>
     <div class="interface">
         <div class="logo">
           <a href="https://github.com/guilhermegalante" target="_blank">
             <img
               src="imgs/galantelog.jpeg"
-              alt="Logo do portfólio Guilherme Galante"
+              alt="Logo do portfólio do autor: Guilherme Galante. Consiste em Uma câmera em volta do G com uma gravata borboleta escrito Galante."
               width="150"
               height="70"
             />
@@ -90,8 +94,61 @@
     </header>
 
     <main><!--GUARDA CONTEUDO PRINCIPAL DO SITE E SO PODE TER UMA POR SITE-->
-
-        <section id="inicio" class="topo-do-site">
+      <section id="especialidades" class="especialidades">
+        <div class="interface">
+          <h2 class="title">Projeto 2 - <span>Automatização em python.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <!-- <i class="bi bi-filetype-js"></i>
+              <h3>Javascript</h3> -->
+              <video class="video-1" src="videos_projeto_2/2023-10-22 19-42-33.mp4"
+              controls
+              width="500"
+              height=""
+              autoplay
+              muted
+              >Projeto 1
+                  
+              </video>
+              <p>
+                Este projeto foi desenvolvido inteiramente na linguagem de programação python, no intensivão da Hashtag Treinamentos. Onde tinhamos um problema da demora em conseguir fazer o preenchimento de milhares de dados de uma planilha no formato csv no site de uma empresa (Eles simularam esse site para cadastro dos produtos). Foram utilizadas as seguintes bibliotecas python:
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Bibliotecas</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Pyautogui - Tem como principal foco a automação de processos repetitivos.</td>
+                      </tr>
+                      <tr>
+                          <td>Time - Utilizado para criar as pausas necessárias para não correr o risco de fazer o processo muito rápido e bugar algo.</td>
+                      </tr>
+                      <tfoot>
+                          <tr>
+                              <td>Pandas - Utilizada para ciência de dados e providencia uma abordagem rápida e flexível com estruturas robustas. Utilizamos para puxar os dados existentes na tabela .csv</td>
+                          </tr>
+                      </tfoot>
+                </tbody>
+              </table>
+                <!-- <ul>
+                  <li>Pyautogui - Tem como principal foco a automação de processos repetitivos.</li>
+                  <li>Time - Utilizado para criar as pausas necessárias para não correr o risco de fazer o processo muito rápido e bugar algo.</li>
+                  <li>Pandas - Utilizada para ciência de dados e providencia uma abordagem rápida e flexível com estruturas robustas. Utilizamos para puxar os dados existentes na tabela .csv </li>
+                </ul> -->
+              </p>
+              
+            </div>
+            
+            <!--especialidades-box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
+        <!-- <section id="inicio" class="topo-do-site">
             <div class="interface">
               <div class="flex">
                 <div class="txt-topo-site">
@@ -108,7 +165,7 @@
                   </p>
     
                 </div>
-                <!--txt-topo-site-->
+                
 
                 <video class="video-1" src="videos_projeto_2/2023-10-22 19-42-33.mp4"
                 controls
@@ -120,13 +177,13 @@
                     
                 </video>
 
-                <!--img-topo-site-->
+                
               </div>
-              <!--flex-->
+              
             </div>
-            <!--interface-->
-          </section>
-          <!--topo-do-site-->
+            
+          </section> -->
+          
         
     </main>
 

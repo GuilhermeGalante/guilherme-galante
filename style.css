@@ -150,7 +150,9 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile.abrir-menu {
-  width: 70%;
+  width: 60%;
+  /* margin-right: 50px; */
+  padding-right: 50px;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu {
