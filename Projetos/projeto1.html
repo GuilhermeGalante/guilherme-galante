@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script defer src="projeto1.js"></script>
 
-    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="projeto.css" />
     <!--favicon-->
     <link
       rel="shortcut icon"
@@ -30,16 +30,16 @@
     />
     <!--bootstrap icons fim-->
     <title>Projeto 1</title>
-</head>
-<body>
-  <div id="particles-js"></div>
-  <script src="
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <script src="
 https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 "></script>
     <header>
-    <div class="interface">
+      <div class="interface">
         <div class="logo">
-          <a href="https://github.com/guilhermegalante" target="_blank">
+          <a href="https://portfolio-pessoal-infnet.vercel.app/" target="_blank">
             <img
               src="imgs/galantelog.jpeg"
               alt="Logo do portfólio Guilherme Galante"
@@ -51,49 +51,67 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         <!--Logo-->
 
         <nav class="menu-desktop">
+          <ul>
+            <li>
+              <a href="https://guilhermegalante.github.io/portfolio/">Início</a>
+            </li>
+            <li>
+              <a href="https://guilhermegalante.github.io/portfolio/"
+                >Especialidades</a
+              >
+            </li>
+            <li>
+              <a href="https://guilhermegalante.github.io/portfolio/">Sobre</a>
+            </li>
+            <li>
+              <a href="https://guilhermegalante.github.io/portfolio/"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--menu-desktop-->
+
+        <div class="btn-contato">
+          <a href="https://wa.me/5531982595619" target="_blank">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn-contato-->
+
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x"></i>
+          </div>
+          <!--btn-fechar-->
+          <nav>
             <ul>
-              <li><a href="https://guilhermegalante.github.io/portfolio/">Início</a></li>
-              <li><a href="https://guilhermegalante.github.io/portfolio/">Especialidades</a></li>
-              <li><a href="https://guilhermegalante.github.io/portfolio/">Sobre</a></li>
-              <li><a href="https://guilhermegalante.github.io/portfolio/">Projetos</a></li>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../index.html">Especialidades</a></li>
+              <li><a href="../index.html">Sobre</a></li>
+              <li>
+                <a href="../index.html"
+                  >Projetos</a
+                >
+              </li>
+              <li><a href="https://wa.me/5531971062598">Contato</a></li>
             </ul>
           </nav>
-          <!--menu-desktop-->
-  
-          <div class="btn-contato">
-            <a href="https://wa.me/5531982595619" target="_blank">
-              <button>Contato</button>
-            </a>
-          </div>
-          <!--btn-contato-->
-  
-          <div class="btn-abrir-menu" id="btn-menu">
-            <i class="bi bi-list"></i>
-          </div>
-  
-          <div class="menu-mobile" id="menu-mobile">
-            <div class="btn-fechar">
-              <i class="bi bi-x"></i>
-            </div><!--btn-fechar-->
-            <nav>
-              <ul>
-                <li><a href="https://guilhermegalante.github.io/portfolio/">Início</a></li>
-                <li><a href="https://guilhermegalante.github.io/portfolio/">Especialidades</a></li>
-                <li><a href="https://guilhermegalante.github.io/portfolio/">Sobre</a></li>
-                <li><a href="https://guilhermegalante.github.io/portfolio/">Projetos</a></li>
-                <li><a href="https://wa.me/5531982595619" >Contato</a></li>
-              </ul>
-            </nav><!--nav-mobile--->
-  
-          </div><!--menu-mobile-->
-          <div class="overlay-menu" id="overlay-menu">
-  
-          </div><!--overlay-menu-->
+          <!--nav-mobile--->
         </div>
-        <!--Interface-->
+        <!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+        <!--overlay-menu-->
+      </div>
+      <!--Interface-->
     </header>
 
-    <main><!--GUARDA CONTEUDO PRINCIPAL DO SITE E SO PODE TER UMA POR SITE-->
+    <main>
+      <!--GUARDA CONTEUDO PRINCIPAL DO SITE E SO PODE TER UMA POR SITE-->
 
       <section id="especialidades" class="especialidades">
         <div class="interface">
@@ -102,22 +120,26 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             <div class="especialidades-box">
               <!-- <i class="bi bi-filetype-js"></i>
               <h3>Javascript</h3> -->
-              <video class="video-1" src="videos/2023-10-21 17-48-19.mp4"
-              controls
-              width="500"
-              height=""
-              autoplay
-              muted
-              >Projeto 1
-                  
+              <video
+                class="video-1"
+                src="videos/2023-10-21 17-48-19.mp4"
+                controls
+                width="500"
+                height=""
+                autoplay
+                muted
+              >
+                Projeto 1
               </video>
               <p>
-                Projeto feito em uma imersão da OneBitCode com o propósito de aprimorar habilidades em HTML, CSS e JS. <br>
-                O projeto consiste em criar um web site de uma veterinária ficticia , e aplicando um design adequado e responsividade ao site.
+                Projeto feito em uma imersão da OneBitCode com o propósito de
+                aprimorar habilidades em HTML, CSS e JS. <br />
+                O projeto consiste em criar um web site de uma veterinária
+                ficticia , e aplicando um design adequado e responsividade ao
+                site.
               </p>
-              
             </div>
-            
+
             <!--especialidades-box-->
           </div>
           <!--flex-->
@@ -125,65 +147,82 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         <!--interface-->
       </section>
       <!--especialidades-->
-        
     </main>
 
     <footer>
-        <div class="interface">
-          <div class="line-footer">
-            <div class="flex">
-              <div class="logo-footer">
-                <img
-                  src="imgs/galantelog.jpeg"
-                  alt="logo guilherme galante"
-                  width="150"
-                  height="70"
-                />
-              </div>
-              <!--logo-footer-->
-              <div class="links-rapidos">
-                <strong class="titulo-links">Links rápidos</strong>
-                <nav>
-                  <ul>
-                    <li><a href="https://guilhermegalante.github.io/portfolio/">Início</a></li>
-                    <li><a href="https://guilhermegalante.github.io/portfolio/">Especialidades</a></li>
-                    <li><a href="https://guilhermegalante.github.io/portfolio/">Sobre</a></li>
-                    <li><a href="https://guilhermegalante.github.io/portfolio/">Projetos</a></li>
-                    <li><a href="https://wa.me/5531982595619" >Contato</a></li>
-                  </ul>
-                </nav>
-              </div><!--links-rapidos-->
-              <div class="btn-social">
-                <a
-                  href="https://www.instagram.com/guilherme_galante17/"
-                  target="_blank"
-                  ><button><i class="bi bi-instagram"></i></button
-                ></a>
-                <a href="https://github.com/GuilhermeGalante" target="_blank"
-                  ><button><i class="bi bi-github"></i></button
-                ></a>
-                <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
-              </div>
-              <!--btn-social-->
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img
+                src="imgs/galantelog.jpeg"
+                alt="logo guilherme galante"
+                width="150"
+                height="70"
+              />
             </div>
-            <!--flex-->
+            <!--logo-footer-->
+            <div class="links-rapidos">
+              <strong class="titulo-links">Links rápidos</strong>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="https://guilhermegalante.github.io/portfolio/"
+                      >Início</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://guilhermegalante.github.io/portfolio/"
+                      >Especialidades</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://guilhermegalante.github.io/portfolio/"
+                      >Sobre</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://guilhermegalante.github.io/portfolio/"
+                      >Projetos</a
+                    >
+                  </li>
+                  <li><a href="https://wa.me/5531982595619">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!--links-rapidos-->
+            <div class="btn-social">
+              <a
+                href="https://www.instagram.com/guilherme_galante17/"
+                target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a href="https://github.com/GuilhermeGalante" target="_blank"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/guilherme-galante-368365299/"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+            </div>
+            <!--btn-social-->
           </div>
-          <!--line-footer-->
-  
-          <div class="line-footer borda">
-            <p>
-              <i class="bi bi-envelope-fill"></i
-              ><a href="mailto:guilherme_galante17@hotmail.com"
-                >guilherme_galante17@hotmail.com</a
-              >
-            </p>
-          </div>
-          <!--line-footer-->
+          <!--flex-->
         </div>
-        <!--interface-->
-      </footer>
+        <!--line-footer-->
 
-</body>
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i
+            ><a href="mailto:guilherme_galante17@hotmail.com"
+              >guilherme_galante17@hotmail.com</a
+            >
+          </p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
+    </footer>
+  </body>
 </html>
