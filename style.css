@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html,body {
+overflow-x: hidden;
+}
+
 body {
   background-color: #000000;
   height: 100vh;
@@ -40,10 +44,6 @@ body {
   font-size: 1.1em;
 }
 
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-}
 
 #stats {
   border-radius: 3px 3px 0 0;
@@ -62,7 +62,7 @@ body {
   display: flex;
 }
 
-.btn-contato button {
+.btn-contato a {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -71,9 +71,11 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
-  margin-top: 20px;
+  color: #000000;
 }
-
+.home-content p {
+  margin-bottom: 10px;
+}
 h2.title {
   color: #fff;
   font-size: 38px;
@@ -82,6 +84,12 @@ h2.title {
 
 h2.title span {
   color: #3185a5;
+}
+
+.btn-contato a:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #3185a5;
+  transform: scale(1.1);
 }
 
 button:hover,
@@ -386,7 +394,6 @@ section.especialidades {
 section.especialidades .flex {
   gap: 60px;
 }
-
 .especialidades .especialidades-box {
   color: #fff;
   padding: 40px;
@@ -395,10 +402,22 @@ section.especialidades .flex {
   transition: 0.2s;
 }
 
+.especialidades .especialidades-box {
+  transition: all 0.3s ease; 
+}
+
 .especialidades .especialidades-box:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px #3185a5;
+  background-color: #3185a5;
+  color: white;
 }
+.especialidades .especialidades-box:hover i {
+  color: white;
+  transform: scale(1.1);
+}
+
+
 
 .especialidades .especialidades-box i {
   font-size: 70px;
@@ -464,6 +483,30 @@ section.sobre .flex {
   margin: 0 5px;
   transition: 0.2s;
 }
+
+.btn-social {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #3185a5;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition:  0.2s;
+}
+
+.btn-social-link:hover {
+  background-color: white;
+}
+
 
 /* estilo do portfolio*/
 section.portfolio {
@@ -698,6 +741,11 @@ footer {
   box-shadow: 0 0 40px 10px #ffffff17;
 }
 
+.logo-footer img  {
+  width: 150px;
+  height: 70px;
+}
+
 footer .flex {
   /* so funciona com display flex a space-between */
   justify-content: space-between;
@@ -888,3 +936,4 @@ footer .links-rapidos nav ul li a {
   .timeline ul li:nth-child(even) {
     padding-left: 10px;
   }
+}

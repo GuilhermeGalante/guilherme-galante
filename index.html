@@ -13,8 +13,6 @@
       rel="shortcut icon"
       href="imgs/galantelog.jpeg"
       type="image/x-icon"
-      width="100"
-      height="70"
     />
     <!--google fonts inicio-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,6 +44,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
               alt="Logo do portfólio do autor: Guilherme Galante. Consiste em Uma câmera em volta do G com uma gravata borboleta escrito Galante."
               width="150"
               height="70"
+              title="Logo do autor Guilherme Galante. Escrito: Galante"
             />
           </a>
         </div>
@@ -53,40 +52,40 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 
         <nav class="menu-desktop">
           <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#inicio" title="Ir para inicio do projeto.">Início</a></li>
+            <li><a href="#especialidades" title="Ir para a aba de especialidades.">Especialidades</a></li>
+            <li><a href="#sobre" title="Ir para a aba de sobre.">Sobre</a></li>
+            <li><a href="#projetos" title="Ir para a aba de projetos.">Projetos</a></li>
           </ul>
         </nav>
         <!--menu-desktop-->
 
-        <div class="btn-contato">
+        <div class="btn-contato" title="Entrar em contato com o autor">
           <a href="https://wa.me/5531971062598" target="_blank">
-            <button>Contato</button>
+            Contato
           </a>
         </div>
         <!--btn-contato-->
 
         <div class="btn-abrir-menu" id="btn-menu">
-          <i class="bi bi-list"></i>
+          <i class="bi bi-list" title="Abrir menu"></i>
         </div>
 
         <div class="menu-mobile" id="menu-mobile">
           <div class="btn-fechar">
-            <i class="bi bi-x"></i>
+            <i class="bi bi-x" title="Fechar menu"></i>
           </div>
           <!--btn-fechar-->
           <nav>
             <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#especialidades">Especialidades</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#formulario">Contato</a></li>
+              <li><a href="#inicio" title="Ir para inicio do projeto.">Início</a></li>
+              <li><a href="#especialidades" title="Ir para a aba de especialidades.">Especialidades</a></li>
+              <li><a href="#sobre" title="Ir para a aba de sobre.">Sobre</a></li>
+              <li><a href="#projetos" title="Ir para a aba de projetos.">Projetos</a></li>
+              <li><a href="#formulario" title="Ir para a aba de formulário.">Contato</a></li>
             </ul>
           </nav>
-          <!--nav-mobile--->
+          <!--nav-mobile-->
         </div>
         <!--menu-mobile-->
         <div class="overlay-menu" id="overlay-menu"></div>
@@ -96,7 +95,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
     </header>
 
     <main>
-      <!--GUARDA CONTEUDO PRINCIPAL DO SITE E SO PODE TER UMA POR SITE-->
       <section id="inicio" class="topo-do-site">
         <div class="interface">
           <div class="flex">
@@ -109,11 +107,33 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
                 aprendendo desde o começo, HTML , CSS e Javascript para depois
                 aplicar meus sólidos conhecimentos em frameworks e bibliotecas.
               </p>
-              <div class="btn-contato">
-                <a href="https://wa.me/5531982595619" target="_blank">
-                  <button>Contrate-me</button>
+              <div class="btn-social">
+                <a href="https://www.instagram.com/guilherme_galante17/" target="_blank" class="btn-social-link">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/GuilhermeGalante" target="_blank" class="btn-social-link">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank" class="btn-social-link">
+                  <i class="bi bi-linkedin"></i>
                 </a>
               </div>
+              
+              <!-- <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/guilherme_galante17/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a href="https://github.com/GuilhermeGalante" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/guilherme-galante-368365299/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+              </div> -->
             </div>
             <!-- <div class="txt-topo-site">
               <h1>Oi, sou o <span>Guilherme</span></h1>
@@ -132,7 +152,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             <!--txt-topo-site-->
 
             <div class="img-topo-site">
-              <img src="imgs/ghibli.jpg" alt="Foto do autor do site no estilo de animação do estúdio Ghibli." />
+              <img src="imgs/ghibli.jpg" alt="Foto do autor do site no estilo de animação do estúdio Ghibli." title="Ilustração do autor Guilherme Galante em estilo Ghibli."/>
             </div>
             <!--img-topo-site-->
           </div>
@@ -147,7 +167,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
           <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
           <div class="flex">
             <div class="especialidades-box">
-              <i class="bi bi-filetype-js"></i>
+              <i class="bi bi-filetype-js" title="Icone Javascript"></i>
               <h3>Javascript</h3>
               <p>
                 Atualmente, aprimoro minhas habilidades em JavaScript,
@@ -191,7 +211,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
-              <img src="imgs/perfil.jpg" alt="Foto do autor do site olhando para frente e de lado para a câmera." />
+              <img src="imgs/perfil.jpg" alt="Foto do autor do site olhando para frente e de lado para a câmera." title="Foto do autor do site olhando para frente e de lado para a câmera." />
             </div>
             <!--img-sobre-->
 
@@ -205,19 +225,15 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
                 formação completa como desenvolvedor full stack.
               </p>
               <div class="btn-social">
-                <a
-                  href="https://www.instagram.com/guilherme_galante17/"
-                  target="_blank"
-                  ><button><i class="bi bi-instagram"></i></button
-                ></a>
-                <a href="https://github.com/GuilhermeGalante" target="_blank"
-                  ><button><i class="bi bi-github"></i></button
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/guilherme-galante-368365299/"
-                  target="_blank"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
+                <a href="https://www.instagram.com/guilherme_galante17/" target="_blank" class="btn-social-link">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/GuilhermeGalante" target="_blank" class="btn-social-link">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank" class="btn-social-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
               </div>
               <!--btn-social-->
             </div>
@@ -306,7 +322,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
               <div class="time"><h4>Janeiro 2025</h4></div>
             </li>
             <div style="clear: both;"></div>
-          </ul>
         </div>
       </section>
       <!-- timeline final -->
@@ -366,9 +381,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             <div class="logo-footer">
               <img
                 src="imgs/galantelog.jpeg"
-                alt="Logo do portfólio do autor: Guilherme Galante. Consiste em Uma câmera em volta do G com uma gravata borboleta escrito Galante."
-                width="150"
-                height="70"
+                alt="Logo do portfólio do autor: Guilherme Galante. Consiste em Uma câmera em volta do G com uma gravata borboleta escrito Galante." title="Logo do portfólio do autor: Guilherme Galante. Consiste em Uma câmera em volta do G com uma gravata borboleta escrito Galante."
               />
             </div>
             <!--logo-footer-->
@@ -386,19 +399,15 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             </div>
             <!--links-rapidos-->
             <div class="btn-social">
-              <a
-                href="https://www.instagram.com/guilherme_galante17/"
-                target="_blank"
-                ><button><i class="bi bi-instagram"></i></button
-              ></a>
-              <a href="https://github.com/GuilhermeGalante" target="_blank"
-                ><button><i class="bi bi-github"></i></button
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/guilherme-galante-368365299/"
-                target="_blank"
-                ><button><i class="bi bi-linkedin"></i></button
-              ></a>
+              <a href="https://www.instagram.com/guilherme_galante17/" target="_blank" class="btn-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://github.com/GuilhermeGalante" target="_blank" class="btn-social-link">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/guilherme-galante-368365299/" target="_blank" class="btn-social-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </div>
             <!--btn-social-->
           </div>
