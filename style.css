@@ -486,7 +486,10 @@ section.sobre .flex {
 
 .btn-social {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px ;
+  gap: 20px;
 }
 
 .btn-social-link {
@@ -836,6 +839,7 @@ footer .links-rapidos nav ul li a {
     width: 100%;
   }
 
+
   /* ESTILO DAS ESPECIALIDADES */
   section.especialidades {
     padding: 40px 8%;
@@ -857,6 +861,10 @@ footer .links-rapidos nav ul li a {
   }
 
   .btn-social {
+    text-align: center;
+  }
+
+  .btn-social .btn-social-link i {
     text-align: center;
   }
 
