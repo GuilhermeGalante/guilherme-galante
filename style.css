@@ -897,15 +897,16 @@ footer .links-rapidos nav ul li a {
 }
 
 @media screen and (max-width: 450px) {
+
   section .timeline {
-    width: 450px;
+    width: 100%;
   }
 
   section .timeline h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   section .timeline h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
   section .timeline p {
     font-size: 12px;
@@ -914,32 +915,32 @@ footer .links-rapidos nav ul li a {
   .timeline::before {
     content: "";
     position: absolute;
-    left: 46%;
+    left: 47%;
     width: 2px;
     height: 100%;
     background: #c5c5c5;
   }
 
-  .timeline ul li:nth-child(odd) .time {
-    right: -165px;
+  .timeline ul li:nth-child(odd) .time { /*  h4*/
+    right: -155px; 
   }
-  .timeline ul li:nth-child(even) .time {
-    left: -195px;
-  }
-
-  .timeline ul li:nth-child(odd):before {
-    position: absolute;
-    right: 12px;
+  .timeline ul li:nth-child(even) .time { /*  h3*/
+    left: -180px;
   }
 
-  .timeline ul li:nth-child(even):before {
+  .timeline ul li:nth-child(odd):before { /*  bola*/
     position: absolute;
-    left: -22px;
+    right: 20px;
+  }
+
+  .timeline ul li:nth-child(even):before { /*  bola*/
+    position: absolute;
+    left: -16px;
   }
 
   .timeline ul li:nth-child(odd) {
-    text-align: right;
-    padding-left: 8px;
+    margin-left: 15px;
+    padding-left:20px;
   }
   .timeline ul li:nth-child(even) {
     padding-left: 10px;
