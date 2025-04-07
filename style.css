@@ -6,8 +6,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html,body {
-overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
 }
 
 /* ---- stats.js ---- */
-
 .count-particles {
   background: #000022;
   position: absolute;
@@ -44,7 +44,6 @@ body {
   font-size: 1.1em;
 }
 
-
 #stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
@@ -53,9 +52,18 @@ body {
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
+
+p {
+  font-size: 16px;
+}
 .interface {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.logo img {
+  width: 150px;
+  height: 70px;
 }
 
 .flex {
@@ -78,7 +86,7 @@ body {
 }
 h2.title {
   color: #fff;
-  font-size: 38px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -223,7 +231,7 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
   color: #fff;
-  font-size: 42px;
+  font-size: 48px;
   line-height: 40px;
 }
 
@@ -265,22 +273,9 @@ section.topo-do-site .flex {
 }
 .typing-text span::before {
   content: "Software Engineer";
-  color: var(--main-color);
+  color: #3185a5;
   animation: words 20s infinite;
 }
-
-/* .typing-text span::after {
-  content: "";
-  background-color: var(--bg-color);
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 20px;
-  border-left: 3px solid var(--bg-color);
-  right: -8;
-  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-  overflow: hidden;
-  border: 2px solid red;
-} */
 
 .typing-text span::after {
   content: "";
@@ -403,7 +398,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .especialidades .especialidades-box:hover {
@@ -417,15 +412,13 @@ section.especialidades .flex {
   transform: scale(1.1);
 }
 
-
-
 .especialidades .especialidades-box i {
   font-size: 70px;
   color: #3185a5;
 }
 
 .especialidades .especialidades-box h3 {
-  font-size: 28px;
+  font-size: 24px;
   margin: 15px 0;
 }
 
@@ -457,7 +450,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 40px;
   margin-bottom: 30px;
 }
@@ -486,7 +479,7 @@ section.sobre .flex {
 
 .btn-social {
   display: flex;
-  padding-top:10px ;
+  padding-top: 10px;
   gap: 20px;
 }
 
@@ -501,13 +494,12 @@ section.sobre .flex {
   text-decoration: none;
   border-radius: 50%;
   font-size: 20px;
-  transition:  0.2s;
+  transition: 0.2s;
 }
 
 .btn-social-link:hover {
   background-color: white;
 }
-
 
 /* estilo do portfolio*/
 section.portfolio {
@@ -742,7 +734,7 @@ footer {
   box-shadow: 0 0 40px 10px #ffffff17;
 }
 
-.logo-footer img  {
+.logo-footer img {
   width: 150px;
   height: 70px;
 }
@@ -795,6 +787,10 @@ footer .links-rapidos nav ul li a {
     display: block;
   }
 
+  p {
+    font-size: 14px;
+  }
+
   .menu-desktop,
   .btn-contato {
     display: none;
@@ -806,7 +802,7 @@ footer .links-rapidos nav ul li a {
   }
 
   h2.title {
-    font-size: 34px;
+    font-size: 24px;
     line-height: 30px;
   }
 
@@ -830,13 +826,12 @@ footer .links-rapidos nav ul li a {
   }
 
   .topo-do-site h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .topo-do-site .img-topo-site img {
     width: 100%;
   }
-
 
   /* ESTILO DAS ESPECIALIDADES */
   section.especialidades {
@@ -853,7 +848,7 @@ footer .links-rapidos nav ul li a {
   }
 
   .sobre .txt-sobre h2 {
-    font-size: 34px;
+    font-size: 24px;
     line-height: 34px;
     text-align: center;
   }
@@ -897,13 +892,12 @@ footer .links-rapidos nav ul li a {
 }
 
 @media screen and (max-width: 450px) {
-
   section .timeline {
     width: 100%;
   }
 
   section .timeline h3 {
-    font-size: 14px;
+    font-size: 20px;
   }
   section .timeline h4 {
     font-size: 14px;
@@ -921,26 +915,30 @@ footer .links-rapidos nav ul li a {
     background: #c5c5c5;
   }
 
-  .timeline ul li:nth-child(odd) .time { /*  h4*/
-    right: -155px; 
+  .timeline ul li:nth-child(odd) .time {
+    /*  h4*/
+    right: -155px;
   }
-  .timeline ul li:nth-child(even) .time { /*  h3*/
+  .timeline ul li:nth-child(even) .time {
+    /*  h3*/
     left: -180px;
   }
 
-  .timeline ul li:nth-child(odd):before { /*  bola*/
+  .timeline ul li:nth-child(odd):before {
+    /*  bola*/
     position: absolute;
     right: 20px;
   }
 
-  .timeline ul li:nth-child(even):before { /*  bola*/
+  .timeline ul li:nth-child(even):before {
+    /*  bola*/
     position: absolute;
     left: -16px;
   }
 
   .timeline ul li:nth-child(odd) {
     margin-left: 15px;
-    padding-left:20px;
+    padding-left: 20px;
   }
   .timeline ul li:nth-child(even) {
     padding-left: 10px;
