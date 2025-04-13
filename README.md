@@ -35,7 +35,7 @@ Durante o desenvolvimento, implementei funcionalidades e boas práticas que apre
 
 <h2> Agradecimentos </h2>
 
-<p>Agradeço especialmente ao professor Cidcley Schmitt, da disciplina de HTML e CSS, e também a professora Eduarda Velho, por todo o suporte e ensinamentos.</p>
+<p>Agradeço especialmente ao professor Cidcley Schmitt, da disciplina de HTML e CSS, e também a professora Eduarda Velho da disciplina de Javascript, por todo o suporte e ensinamentos.</p>
 
 <h2> Contatos </h2>
 
