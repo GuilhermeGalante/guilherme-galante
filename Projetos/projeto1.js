@@ -124,3 +124,27 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('white');
+
+  // Verifica se está no modo white
+  const isWhiteMode = document.body.classList.contains('white');
+
+  // Atualiza a cor das partículas
+  if (window.pJSDom && window.pJSDom[0]) {
+    const pJS = pJSDom[0].pJS;
+  
+    // Cor das partículas
+    pJS.particles.color.value = isWhiteMode ? "#000000" : "#ffffff";
+  
+    // Cor das linhas que ligam os pontos
+    pJS.particles.line_linked.color = isWhiteMode ? "#000000" : "#ffffff";
+  
+    // Atualiza as partículas na tela
+    pJS.fn.particlesRefresh();
+  }
+  
+});

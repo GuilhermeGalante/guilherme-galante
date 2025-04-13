@@ -16,7 +16,6 @@ body {
   width: 100%;
   position: fixed;
   z-index: -1;
-  background: #000000;
 }
 
 /* ---- stats.js ---- */
@@ -41,10 +40,7 @@ body {
   font-size: 1.1em;
 }
 
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-}
+
 
 #stats {
   border-radius: 3px 3px 0 0;
@@ -64,17 +60,161 @@ body {
   display: flex;
 }
 
-.btn-contato button {
+/* Dark mode*/
+
+body.white {
+  background: white;
+  transition: 0.5s;
+}
+
+
+body.white header {
+  background-color: #3185a5;
+}
+body.white .btn-contato a {
+  background-color: #fff;
+  color: #3185a5;
+}
+body.white header nav a {
+  color: #333;
+}
+
+body.white .label {
+  background-color: #fff;
+}
+body.white .label .ball {
+  background-color: #3185a5;
+}
+body.white .fa-solid {
+  color: #3185a5; /* Cor dos ícones no modo claro */
+}
+
+/* Alterando a cor do texto e ícones em elementos específicos (opcional) */
+body.white h1,
+body.white h2,
+body.white h3,
+body.white h4,
+body.white h5,
+body.white h6 {
+  color: #333; /* Cor dos títulos no modo claro */
+}
+body.white p {
+  color: #333;
+}
+body.white .fa-solid {
+  color: #333;
+  font-size: 20px;
+}
+
+body.white .btn-social a {
+  color: white;
+}
+body.white .btn-social-link:hover {
+  background-color: #333;
+}
+body.white .topo-do-site .img-topo-site img {
+  box-shadow: 0 0 8px #333;
+}
+
+body.white .img-sobre img {
+  box-shadow: 0 0 8px #333;
+}
+
+body.white #inicio {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #especialidades{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #sobre {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #projetos {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #educacao {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body.white .btn-abrir-menu i {
+  color: #fff;
+}
+
+/* Modo Claro - Footer */
+body.white footer {
+  background-color: #3185a5;
+}
+
+body.white footer #envelope {
+  color: #333;
+}
+
+body.white footer i {
+  color: #3185a5;
+}
+
+body.white footer .btn-social a {
+  background-color: white;
+}
+
+body.white footer .btn-social-link:hover {
+  background-color: #000000;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: #3185a5;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  height: 35px;
+  width: 70px;
+  transform: scale(1.1);
+}
+
+.label .ball {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(36px);
+}
+
+.fa-solid {
+  color: #333;
+  font-size: 20px;
+}
+
+.btn-contato a {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #3185A5;
+  background-color: #3185a5;
   border: 0;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
+  color: #000000;
 }
 
+.btn-contato a:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #3185a5;
+  transform: scale(1.1);
+}
 h2.title {
   color: #fff;
   font-size: 38px;
@@ -238,17 +378,23 @@ section.especialidades {
 }
 
 /* botoes sociais rodape */
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #3185A5;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: 0.2s;
-  }
+.btn-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #3185a5;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.btn-social-link:hover {
+  background-color: white;
+}
 
 /* estilo do rodape */
 
@@ -294,6 +440,12 @@ footer .links-rapidos nav ul li a {
   margin-bottom: 8px;
   text-decoration: none;
 }
+
+footer .links-rapidos nav ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 1020px) {
   .btn-abrir-menu {

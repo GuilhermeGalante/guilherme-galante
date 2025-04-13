@@ -587,18 +587,6 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  background-color: #3185a5;
-  font-size: 22px;
-  cursor: pointer;
-  margin: 0 5px;
-  transition: 0.2s;
-}
-
 .btn-social {
   display: flex;
   padding-top: 10px;
