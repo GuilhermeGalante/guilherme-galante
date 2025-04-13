@@ -14,13 +14,14 @@ body {
 body {
   background-color: #000000;
   height: 100vh;
+  transition: 0.5s;
 }
 #particles-js {
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: -1;
-  background: #000000;
+  /* background: #000000; */
 }
 
 /* ---- stats.js ---- */
@@ -68,6 +69,123 @@ p {
 
 .flex {
   display: flex;
+}
+
+/* Dark mode*/
+
+body.white {
+  background: white;
+  transition: 0.5s;
+}
+
+
+body.white header {
+  background-color: #3185a5;
+}
+body.white .btn-contato a {
+  background-color: #fff;
+  color: #3185a5;
+}
+body.white header nav a {
+  color: #333;
+}
+
+body.white .label {
+  background-color: #fff;
+}
+body.white .label .ball {
+  background-color: #3185a5;
+}
+body.white .fa-solid {
+  color: #3185a5; /* Cor dos ícones no modo claro */
+}
+
+/* Alterando a cor do texto e ícones em elementos específicos (opcional) */
+body.white h1,
+body.white h2,
+body.white h3,
+body.white h4,
+body.white h5,
+body.white h6 {
+  color: #333; /* Cor dos títulos no modo claro */
+}
+body.white p {
+  color: #333;
+}
+body.white .fa-solid {
+  color: #333;
+  font-size: 20px;
+}
+
+body.white .btn-social a {
+  color: white;
+}
+body.white .btn-social-link:hover {
+  background-color: #333;
+}
+body.white .topo-do-site .img-topo-site img {
+  box-shadow: 0 0 8px #333;
+}
+
+body.white .img-sobre img {
+  box-shadow: 0 0 8px #333;
+}
+
+body.white #inicio {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #especialidades{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #sobre {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #projetos {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+body.white #educacao {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body.white .btn-abrir-menu i {
+  color: #fff;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: #3185a5;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  height: 35px;
+  width: 70px;
+  transform: scale(1.1);
+}
+
+.label .ball {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(36px);
+}
+
+.fa-solid {
+  color: #333;
+  font-size: 20px;
 }
 
 .btn-contato a {
@@ -286,6 +404,10 @@ section.topo-do-site .flex {
   animation: cursor 0.8s infinite, write 20s steps(14) infinite;
   width: calc(100% + 10px);
   background-color: #000000;
+}
+
+body.white .typing-text span::after {
+  background-color: white;
 }
 
 @keyframes write {
@@ -567,6 +689,7 @@ section .timeline {
   padding: 40px 0;
   width: 1000px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .timeline::before {
   content: "";
@@ -614,7 +737,7 @@ section .timeline {
   height: 10px;
   background: #3185a5;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 100, 0.267);
+  box-shadow: 0 0 0 3px rgba(2, 100, 139, 0.2);
 }
 .timeline ul li:nth-child(even):before {
   content: "";
@@ -625,7 +748,7 @@ section .timeline {
   height: 10px;
   background: #3185a5;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  box-shadow: 0 0 0 3px rgba(2, 100, 139, 0.2);
 }
 
 .timeline ul li h3 {
@@ -760,6 +883,7 @@ footer .line-footer p i {
 footer .line-footer p a {
   color: #fff;
   margin-left: 10px;
+  
 }
 
 footer .titulo-links {
@@ -768,6 +892,7 @@ footer .titulo-links {
   font-weight: 600;
   margin-bottom: 24px;
   margin-top: 24px;
+  
 }
 
 footer .links-rapidos nav ul li a {
@@ -775,14 +900,92 @@ footer .links-rapidos nav ul li a {
   display: block;
   margin-bottom: 8px;
   text-decoration: none;
+  
 }
 
-/* footer .logo-footer img {
-  width: 60%;
-} */
+footer .links-rapidos nav ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Modo Claro - Footer */
+body.white footer {
+  background-color: #3185a5;
+}
+
+body.white footer #envelope {
+  color: #333;
+}
+
+body.white footer i {
+  color: #3185a5;
+}
+
+body.white footer .btn-social a {
+  background-color: white;
+}
+
+body.white footer .btn-social-link:hover {
+  background-color: #000000;
+}
 
 /* responsividade */
-@media screen and (max-width: 1020px) {
+
+@media screen and (max-width: 450px) {
+  section .timeline {
+    width: 100%;
+  }
+
+  section .timeline h3 {
+    font-size: 20px;
+  }
+  section .timeline h4 {
+    font-size: 14px;
+  }
+  section .timeline p {
+    font-size: 12px;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 47%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+  }
+
+  .timeline ul li:nth-child(odd) .time {
+    /*  h4*/
+    right: -155px;
+  }
+  .timeline ul li:nth-child(even) .time {
+    /*  h3*/
+    left: -180px;
+  }
+
+  .timeline ul li:nth-child(odd):before {
+    /*  bola*/
+    position: absolute;
+    right: 20px;
+  }
+
+  .timeline ul li:nth-child(even):before {
+    /*  bola*/
+    position: absolute;
+    left: -16px;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .btn-abrir-menu {
     display: block;
   }
@@ -891,7 +1094,7 @@ footer .links-rapidos nav ul li a {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1200px) {
   section .timeline {
     width: 100%;
   }
@@ -909,7 +1112,7 @@ footer .links-rapidos nav ul li a {
   .timeline::before {
     content: "";
     position: absolute;
-    left: 47%;
+    left: 49%;
     width: 2px;
     height: 100%;
     background: #c5c5c5;
@@ -917,23 +1120,23 @@ footer .links-rapidos nav ul li a {
 
   .timeline ul li:nth-child(odd) .time {
     /*  h4*/
-    right: -155px;
+    right: -160px;
   }
   .timeline ul li:nth-child(even) .time {
     /*  h3*/
-    left: -180px;
+    left: -190px;
   }
 
   .timeline ul li:nth-child(odd):before {
     /*  bola*/
     position: absolute;
-    right: 20px;
+    right: 13px;
   }
 
   .timeline ul li:nth-child(even):before {
     /*  bola*/
     position: absolute;
-    left: -16px;
+    left: -9px;
   }
 
   .timeline ul li:nth-child(odd) {
