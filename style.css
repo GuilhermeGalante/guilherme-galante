@@ -560,6 +560,7 @@ section.sobre .flex {
   border-radius: 50%;
   border: 1px solid #3185a5;
   box-shadow: 0 0 8px #ffffff8e;
+  transition: 0.3s;
 }
 
 .img-sobre img:hover {
