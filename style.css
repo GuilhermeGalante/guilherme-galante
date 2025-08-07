@@ -78,7 +78,6 @@ body.white {
   transition: 0.5s;
 }
 
-
 body.white header {
   background-color: #3185a5;
 }
@@ -134,7 +133,7 @@ body.white .img-sobre img {
 body.white #inicio {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-body.white #especialidades{
+body.white #especialidades {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 body.white #sobre {
@@ -146,6 +145,7 @@ body.white #projetos {
 body.white #educacao {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
+
 
 body.white .btn-abrir-menu i {
   color: #fff;
@@ -286,7 +286,7 @@ header nav.menu-desktop ul li {
 .menu-mobile.abrir-menu {
   width: 60%;
   /* margin-right: 50px; */
-  padding-right:auto;
+  padding-right: auto;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu {
@@ -506,10 +506,18 @@ body.white .typing-text span::after {
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
   padding: 40px 4%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 40px 10px #ffffff17;
+
 }
 
 section.especialidades .flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
   gap: 60px;
+  justify-items: center; 
+  align-items: center; 
 }
 .especialidades .especialidades-box {
   color: #fff;
@@ -521,17 +529,17 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box {
   transition: all 0.3s ease;
+  text-align: center;
+   max-width: 200px; 
 }
 
 .especialidades .especialidades-box:hover {
-  transform: scale(1.1);
   box-shadow: 0 0 8px #3185a5;
   background-color: #3185a5;
   color: white;
 }
 .especialidades .especialidades-box:hover i {
   color: white;
-  transform: scale(1.1);
 }
 
 .especialidades .especialidades-box i {
@@ -872,7 +880,6 @@ footer .line-footer p i {
 footer .line-footer p a {
   color: #fff;
   margin-left: 10px;
-  
 }
 
 footer .titulo-links {
@@ -881,7 +888,6 @@ footer .titulo-links {
   font-weight: 600;
   margin-bottom: 24px;
   margin-top: 24px;
-  
 }
 
 footer .links-rapidos nav ul li a {
@@ -889,7 +895,6 @@ footer .links-rapidos nav ul li a {
   display: block;
   margin-bottom: 8px;
   text-decoration: none;
-  
 }
 
 footer .links-rapidos nav ul li {
@@ -972,6 +977,17 @@ body.white footer .btn-social-link:hover {
   .timeline ul li:nth-child(even) {
     padding-left: 10px;
   }
+
+  section.especialidades .flex {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+
+  .especialidades .especialidades-box {
+    max-width: 180px;
+    padding: 30px;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -1026,8 +1042,31 @@ body.white footer .btn-social-link:hover {
   }
 
   /* ESTILO DAS ESPECIALIDADES */
-  section.especialidades {
-    padding: 40px 8%;
+section.especialidades {
+  padding: 40px 4%;
+  display: flex;
+  justify-content: center;
+}
+
+section.especialidades .flex {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 60px;
+  justify-content: center;
+}
+
+  section.especialidades .flex {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* ocupa a altura inteira da tela */
+  }
+
+  .especialidades .especialidades-box {
+    max-width: 180px;
+    padding: 30px;
+    margin-top: 0; /* remove o empurrão para baixo */
   }
 
   /* estilo sobre */
@@ -1097,7 +1136,7 @@ body.white footer .btn-social-link:hover {
   section .timeline p {
     font-size: 12px;
   }
-
+  
   .timeline::before {
     content: "";
     position: absolute;
