@@ -32,6 +32,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <div id="particles-js"></div>
@@ -63,7 +70,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             </li>
             <li>
               <a href="#especialidades" title="Ir para a aba de especialidades."
-                >Especialidades</a
+                >Tecnologias</a
               >
             </li>
             <li><a href="#sobre" title="Ir para a aba de sobre.">Sobre</a></li>
@@ -114,7 +121,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
                 <a
                   href="#especialidades"
                   title="Ir para a aba de especialidades."
-                  >Especialidades</a
+                  >Tecnologias</a
                 >
               </li>
               <li>
@@ -199,45 +206,56 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
       </section>
       <!--topo-do-site-->
 
-      <section id="especialidades" class="especialidades">
-        <div class="interface">
-          <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
+      <section class="especialidades">
+        <div class="conteudo">
+          <h2>Minhas Tecnologias</h2>
+          <p>
+            Esta seção destaca as principais tecnologias e ferramentas que
+            utilizo no meu dia a dia para construir aplicações web modernas e
+            eficientes. A combinação dessas ferramentas me permite criar
+            experiências digitais robustas, escaláveis e visualmente atraentes.
+          </p>
+
           <div class="flex">
             <div class="especialidades-box">
-              <i class="bi bi-filetype-js" title="Icone Javascript"></i>
-              <!-- <h3>Javascript</h3> -->
-              <!-- <p>
-                Atualmente, aprimoro minhas habilidades em JavaScript,
-                explorando o desenvolvimento web e aplicando conceitos práticos
-                em projetos. Estou me aprofundando em suas funcionalidades para
-                criar interatividade e dinamismo em páginas web. Também possuo
-                noções básicas em C que ajudam na minha lógica de programação.
-              </p> -->
-            </div>
-            <!--especialidades-box-->
-            <div class="especialidades-box">
-              <i class="bi bi-filetype-html"></i>
-            </div>
-            <!--especialidades-box-->
-            <div class="especialidades-box">
-              <i class="bi bi-filetype-css"></i>
-            </div>
-            <div class="especialidades-box">
               <i class="fa-brands fa-react"></i>
+              <h3>React</h3>
+            </div>
+            <div class="especialidades-box">
+              <i class="fa-brands fa-neos"></i>
+              <h3>Next.js</h3>
+            </div>
+            <div class="especialidades-box">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="especialidades-box">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS</h3>
             </div>
             <div class="especialidades-box">
               <i class="fa-brands fa-python"></i>
+              <h3>Python</h3>
             </div>
             <div class="especialidades-box">
-              <i class="bi bi-filetype-sql"></i>
+              <i class="fa-solid fa-database"></i>
+              <h3>PostgreSQL</h3>
             </div>
-            <!--especialidades-box-->
+            <div class="especialidades-box">
+              <i class="fa-brands fa-js"></i>
+              <h3>Javascript</h3>
+            </div>
+            <div class="especialidades-box">
+              <i class="fa-brands fa-css3"></i>
+              <h3>TailwindCSS</h3>
+            </div>
+            <div class="especialidades-box">
+              <i class="fa-brands fa-github"></i>
+              <h3>Github</h3>
+            </div>
           </div>
-          <!--flex-->
         </div>
-        <!--interface-->
       </section>
-      <!--especialidades-->
 
       <section id="sobre" class="sobre">
         <div class="interface">
@@ -316,6 +334,18 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
               </div>
             </a>
             <a
+              href="https://rxproducoes.com.br/"
+              title="Ir para projeto 1"
+              target="_blank"
+            >
+              <div
+                class="img-port"
+                style="background-image: url('imgs/Rxproducoes_img.png')"
+              >
+                <div class="overlay">Projeto 2</div>
+              </div>
+            </a>
+            <a
               href="projetos2/projeto2.html"
               title="Ir para projeto 1"
               target="_blank"
@@ -323,18 +353,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
               <div
                 class="img-port"
                 style="background-image: url('imgs/Projeto2.png')"
-              >
-                <div class="overlay">Projeto 2</div>
-              </div>
-            </a>
-            <a
-              href="Projetos/projeto1.html"
-              title="Ir para projeto 1"
-              target="_blank"
-            >
-              <div
-                class="img-port"
-                style="background-image: url('imgs/Funil OBC Start 2.0.png')"
               >
                 <div class="overlay">Projeto 3</div>
               </div>
@@ -406,54 +424,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
           </div>
         </div>
       </section>
-      <!-- timeline final -->
-      <!-- <section class="formulario" id="formulario">
-        <div class="interface">
-          <h2 class="title">FALA <span>COMIGO.</span></h2>
-
-          <form
-            method="post"
-            action="https://formsubmit.co/ajax/guilherme.galante17112003@gmail.com"
-            data-form
-          >
-            <label for="nome"></label>
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Seu nome completo:"
-              required
-            />
-            <label for="email"></label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Seu e-mail:"
-              required
-            />
-            <label for="telefone"></label>
-            <input
-              type="text"
-              name="telefone"
-              id="telefone"
-              placeholder="Seu celular:"
-            />
-            <label for="mensagem"></label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              placeholder="Sua mensagem"
-              required
-            ></textarea>
-            <div class="btn-enviar">
-              <input type="submit" data-button value="ENVIAR" />
-            </div>
-          </form>
-        </div>
-      </section> -->
-      <!--interface-->
-      <!--formulario-->
     </main>
 
     <footer>
@@ -476,7 +446,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
                   <li><a href="#inicio" title="Ir para inicio">Início</a></li>
                   <li>
                     <a href="#especialidades" title="Ir para especialidades"
-                      >Especialidades</a
+                      >Tecnologias</a
                     >
                   </li>
                   <li><a href="#sobre" title="Ir para sobre">Sobre</a></li>

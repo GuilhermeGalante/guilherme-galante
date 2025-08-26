@@ -505,32 +505,47 @@ body.white .typing-text span::after {
 
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
-  padding: 40px 4%;
+  padding: 60px 4%;
   display: flex;
   justify-content: center;
   box-shadow: 0 0 40px 10px #ffffff17;
+  text-align: center;
+}
 
+section.especialidades .conteudo {
+  max-width: 1200px;
+  width: 100%;
+}
+
+section.especialidades h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+section.especialidades p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
 }
 
 section.especialidades .flex {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  justify-items: center; 
-  align-items: center; 
+  justify-items: center;
+  align-items: center;
 }
+
 .especialidades .especialidades-box {
   color: #fff;
   padding: 40px;
   border-radius: 20px;
-  margin-top: 46px;
-  transition: 0.2s;
-}
-
-.especialidades .especialidades-box {
   transition: all 0.3s ease;
   text-align: center;
-   max-width: 200px; 
+  max-width: 200px;
 }
 
 .especialidades .especialidades-box:hover {
@@ -538,18 +553,20 @@ section.especialidades .flex {
   background-color: #3185a5;
   color: white;
 }
-.especialidades .especialidades-box:hover i {
-  color: white;
-}
 
 .especialidades .especialidades-box i {
   font-size: 70px;
   color: #3185a5;
+  transition: 0.3s;
+}
+
+.especialidades .especialidades-box:hover i {
+  color: white;
 }
 
 .especialidades .especialidades-box h3 {
-  font-size: 24px;
-  margin: 15px 0;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 /* estilo do sobre */
@@ -980,14 +997,25 @@ body.white footer .btn-social-link:hover {
 
   section.especialidades .flex {
     grid-template-columns: 1fr; 
+    gap: 25px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  section.especialidades .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
+    justify-items: center;
   }
 
   .especialidades .especialidades-box {
-    max-width: 180px;
+    max-width: 160px;
     padding: 30px;
+    margin-top: 0;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
