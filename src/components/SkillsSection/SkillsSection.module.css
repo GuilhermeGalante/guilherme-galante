@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.header {
+  position: relative;
+}
+
+.heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  margin: 0;
+  display: inline-block;
+  background-color: var(--background);
+  padding-right: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  z-index: 0;
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--foreground);
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.chip:hover {
+  background-color: var(--card-bg);
+  border-color: var(--text-muted);
+}

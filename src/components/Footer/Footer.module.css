@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-color);
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.text {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

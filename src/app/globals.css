@@ -1,0 +1,46 @@
+:root {
+  --background: #ffffff;
+  --foreground: #1c1c1e;
+  --text-muted: #666666;
+  --primary-accent: #34c759;
+  --border-color: #e5e5ea;
+  --card-bg: #f9f9f9;
+  --radius: 12px;
+}
+
+[data-theme='dark'] {
+  --background: #111111;
+  --foreground: #f2f2f7;
+  --text-muted: #a1a1aa;
+  --primary-accent: #32d74b;
+  --border-color: #333333;
+  --card-bg: #1c1c1e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}

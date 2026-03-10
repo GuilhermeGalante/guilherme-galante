@@ -1,0 +1,110 @@
+.card {
+  --project-accent: #f26b3a; /* Match the orange tone from the design */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--project-accent);
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background-color: var(--card-bg);
+  border-color: var(--project-accent);
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+}
+
+.summaryContainer {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.summaryBar {
+  width: 2px;
+  background-color: var(--project-accent);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.summaryText {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bulletList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.bulletDot {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--project-accent);
+  margin-top: 8px; /* Alignment with first line of text */
+}
+
+@media (max-width: 600px) {
+  .bulletList {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

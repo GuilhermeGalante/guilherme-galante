@@ -1,0 +1,71 @@
+.card {
+  --exp-accent: #e5e5ea; /* Subtle color for the bullets based on the design */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.company {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.period {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-family: monospace; /* Gives that "06/2025 - 09/2025" sleek look */
+  text-transform: uppercase;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.bulletDot {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--exp-accent);
+  margin-top: 9px; /* Alignment with first line of text */
+}
+
+@media (max-width: 600px) {
+  .period {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,140 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+  padding-bottom: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.marginTop {
+  margin-top: 36px;
+}
+
+.heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  margin: 0;
+  display: inline-block;
+  background-color: var(--background);
+  padding-right: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  z-index: 0;
+}
+
+.contentBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.separator {
+  color: var(--border-color);
+  margin: 0 4px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.period {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-family: monospace;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.languagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.langItem {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.langItem strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.certList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.certDot {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  margin-top: 8px; 
+}
+
+.certTitle {
+  font-size: 15px;
+  color: var(--foreground);
+  font-weight: 500;
+  margin: 0 0 2px 0;
+}
+
+.certPeriod {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+@media (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
