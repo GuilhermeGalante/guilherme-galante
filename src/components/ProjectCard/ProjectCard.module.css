@@ -1,5 +1,5 @@
 .card {
-  --project-accent: #f26b3a; /* Match the orange tone from the design */
+  --project-accent: #3186A5; 
   display: flex;
   flex-direction: column;
   gap: 16px;
