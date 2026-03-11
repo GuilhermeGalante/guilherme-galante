@@ -50,7 +50,12 @@ export function EducationSection() {
               <p className={styles.certTitle}>{t('certifications.c2')}</p>
             </div>
           </li>
-
+          <li className={styles.certItem}>
+            <span className={styles.certDot}></span>
+            <div>
+              <p className={styles.certTitle}>{t('certifications.c3')}</p>
+            </div>
+          </li>
         </ul>
       </section>
 

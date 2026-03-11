@@ -8,7 +8,7 @@ export function SkillsSection() {
 
   const skills = [
     "Python", "TypeScript", "Next.js", "React", "Java", "SQL", 
-    "Robot Framework", "Tailwind CSS", t('skills.title').includes('HABILIDADES') ? "Cibersegurança" : "Cybersecurity", "Pentest / QA Security", "Git/GitHub"
+    "Robot Framework", "Tailwind CSS", t('skills.title').includes('HABILIDADES') ? "Cibersegurança" : "Cybersecurity", "Pentest / QA Security", "Git/GitHub", "Burp Suite","OWASP", "Postman", "Swagger"
   ];
 
   return (

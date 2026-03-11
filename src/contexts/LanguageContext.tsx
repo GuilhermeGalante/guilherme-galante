@@ -38,8 +38,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return translations[language][key] || key;
   };
 
-  // Prevent hydration mismatch by rendering default initially
-  // but it's safe since useLanguage triggers rerender after mount
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
