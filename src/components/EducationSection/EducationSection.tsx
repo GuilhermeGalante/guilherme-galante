@@ -17,7 +17,7 @@ export function EducationSection() {
 
         <div className={styles.contentBlock}>
           <h4 className={styles.title}>
-            {t('education.infnet.company')} <span className={styles.separator}>|</span> {t('education.infnet.location')}
+            {t('education.infnet.company')}
           </h4>
           <p className={styles.subtitle}>{t('education.infnet.role')}</p>
           <span className={styles.period}>01/2025 - 12/2028</span>

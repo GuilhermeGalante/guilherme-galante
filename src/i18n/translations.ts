@@ -1,10 +1,10 @@
 export const translations = {
   PT: {
-    "header.jobTitle": "Desenvolvedor Web & QA Engineer | Foco em Cibersegurança e Segurança Ofensiva",
+    "header.jobTitle": "Software Engineer & QA Engineer | Foco em Cibersegurança e Segurança Ofensiva",
     "contact.nationality": "BRASILEIRO",
     "contact.location": "PONTE NOVA, MG",
     "about.title": "SOBRE MIM",
-    "about.p1": "Desenvolvedor Web e QA Engineer, com forte direcionamento para Cibersegurança e Segurança Ofensiva. Minha jornada profissional começou na construção civil como Técnico em Edificações, onde aprendi que uma base estrutural sólida não é negociável. Hoje, aplico essa mesma filosofia na área de tecnologia, construindo e testando sistemas onde a arquitetura e a segurança são tão robustas quanto a fundação de um prédio.",
+    "about.p1": "Software Engineer e QA Engineer, com forte direcionamento para Cibersegurança e Segurança Ofensiva. Minha jornada profissional começou na construção civil como Técnico em Edificações, onde aprendi que uma base estrutural sólida não é negociável. Hoje, aplico essa mesma filosofia na área de tecnologia, construindo e testando sistemas onde a arquitetura e a segurança são tão robustas quanto a fundação de um prédio.",
     "about.p2": "Como QA Engineer, minha atuação vai além de garantir a cobertura funcional: trago uma mentalidade preventiva de segurança para o ciclo de desenvolvimento. Realizo a elaboração de cenários e automação de testes, sempre integrando práticas de pentest, tentativas de brute force e análise de vulnerabilidades para mitigar riscos antes que cheguem a produção.",
     "about.p3": "Como desenvolvedor, crio experiências digitais intuitivas e de alta performance utilizando Next.js, React e Tailwind. Acredito que o código é apenas o começo; uma interface só cumpre seu papel se for otimizada, escalável e, acima de tudo, uma fortaleza digital segura. Atualmente, também dedico meus estudos a Python e arquiteturas de redes, com o objetivo de consolidar minha transição para Analista de Cibersegurança.",
     "projects.title": "PROJETOS EM DESTAQUE",
@@ -14,7 +14,7 @@ export const translations = {
     "projects.autoescola.b1": "Stack e Performance: Construído com Next.js, TypeScript e Tailwind CSS para garantir um carregamento otimizado e alta performance, fatores cruciais para a indexação no Google e retenção de usuários.",
     "projects.autoescola.b2": "Segurança na Captação: Por lidar diretamente com dados de potenciais alunos, a arquitetura inclui validações rigorosas nos formulários para prevenir injeções de código (XSS) e proteger as informações, além de aplicar defesas ativas contra brute force nas requisições.",
     "projects.rx.title": "Rx Produções",
-    "projects.rx.summary": "Portfólio Artístico Digital e E-commerce Integrado",
+    "projects.rx.summary": "Portfólio Artístico Digital",
     "projects.rx.desc": "Website desenvolvido para consolidar a presença digital de um ator local. O design foi meticulosamente pensado para destacar o portfólio visual, apresentando peças teatrais, histórico de caravanas culturais e materiais de divulgação.",
     "projects.rx.b1": "Integrações e Validações: Conta com um fluxo de vendas de livros integrado diretamente com a plataforma Yampi. Os formulários de contato e interação foram construídos com React e Zod, garantindo validação de schemas e sanitização estrita de dados no front-end para barrar entradas maliciosas.",
     "projects.rx.b2": "Arquitetura Resiliente: Adoção de tipagem estática com TypeScript e Next.js para eliminar vulnerabilidades de execução, aliada à configuração de políticas de segurança (Security Headers) para proteger a navegação.",
@@ -52,7 +52,6 @@ export const translations = {
     "skills.title": "HABILIDADES & TECH STACK",
     "education.title": "FORMAÇÃO",
     "education.infnet.company": "Instituto Infnet",
-    "education.infnet.location": "Online",
     "education.infnet.role": "Engenharia de Software",
     "education.senai.company": "SENAI/MG",
     "education.senai.location": "Ponte Nova",
@@ -66,7 +65,7 @@ export const translations = {
     "languages.pt.level": "Nativo",
     "languages.en": "Inglês",
     "languages.en.level": "Intermediário",
-    "footer.role": "DESENVOLVEDOR WEB & QA ENGINEER"
+    "footer.role": "Software Engineer & QA ENGINEER"
   },
   EN: {
     "header.jobTitle": "Web Developer & QA Engineer | Focus on Cybersecurity and Offensive Security",
@@ -121,7 +120,6 @@ export const translations = {
     "skills.title": "SKILLS & TECH STACK",
     "education.title": "EDUCATION",
     "education.infnet.company": "Instituto Infnet",
-    "education.infnet.location": "Online",
     "education.infnet.role": "Software Engineering",
     "education.senai.company": "SENAI/MG",
     "education.senai.location": "Ponte Nova",
