@@ -2,7 +2,7 @@ export const translations = {
   PT: {
     "header.jobTitle": "Software Engineer & QA Engineer | Foco em Cibersegurança e Segurança Ofensiva",
     "contact.nationality": "BRASILEIRO",
-    "contact.location": "PONTE NOVA, MG",
+    "contact.location": "BELO HORIZONTE, MG",
     "about.title": "SOBRE MIM",
     "about.p1": "Software Engineer e QA Engineer, com forte direcionamento para Cibersegurança e Segurança Ofensiva. Minha jornada profissional começou na construção civil como Técnico em Edificações, onde aprendi que uma base estrutural sólida não é negociável. Hoje, aplico essa mesma filosofia na área de tecnologia, construindo e testando sistemas onde a arquitetura e a segurança são tão robustas quanto a fundação de um prédio.",
     "about.p2": "Como QA Engineer, minha atuação vai além de garantir a cobertura funcional: trago uma mentalidade preventiva de segurança para o ciclo de desenvolvimento. Realizo a elaboração de cenários e automação de testes, sempre integrando práticas de pentest, tentativas de brute force e análise de vulnerabilidades para mitigar riscos antes que cheguem a produção.",
@@ -70,7 +70,7 @@ export const translations = {
   EN: {
     "header.jobTitle": "Web Developer & QA Engineer | Focus on Cybersecurity and Offensive Security",
     "contact.nationality": "BRAZILIAN",
-    "contact.location": "PONTE NOVA, MG",
+    "contact.location": "BELO HORIZONTE, MG",
     "about.title": "ABOUT ME",
     "about.p1": "Web Developer and QA Engineer, with a strong focus on Cybersecurity and Offensive Security. My professional journey began in civil construction as a Building Technician, where I learned that a solid structural foundation is non-negotiable. Today, I apply this same philosophy in technology, building and testing systems where architecture and security are as robust as a building's foundation.",
     "about.p2": "As a QA Engineer at VIDI, my role goes beyond ensuring functional coverage: I bring a preventive security mindset to the development cycle. I create test scenarios and automate tests, always integrating pentesting practices, brute force attempts, and vulnerability analysis to mitigate risks before they reach production.",
